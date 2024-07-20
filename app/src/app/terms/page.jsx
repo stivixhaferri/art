@@ -4,55 +4,69 @@ const TermsAndConditionsPage = () => {
   return (
     <div className=" text-gray-800 lg:pt-[0%] pt-[15%]  font-sans">
       <div className="container mx-auto px-4 py-12">
-        <h1 className="text-4xl font-bold mb-8 text-center">Terms and Conditions</h1>
+        <h1 className="text-4xl font-bold mb-8 text-center">Terms & Conditions</h1>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="bg-white shadow-md rounded-lg p-8">
-            <h2 className="text-2xl font-bold mb-4">Introduction</h2>
+            <h2 className="text-2xl font-bold mb-4">Hyrje</h2>
             <p className="mb-4">
-              Welcome to our website. By accessing or using our website, you agree to be bound by these terms and conditions and our privacy policy.
+              Mirë se vini në faqen tonë të internetit. Duke aksesuar ose përdorur faqen tonë, pranoni të jeni të lidhur me këto kushte dhe kushtet dhe politikën tonë të privatësisë.
             </p>
           </div>
 
           <div className="bg-white shadow-md rounded-lg p-8">
-            <h2 className="text-2xl font-bold mb-4">Use of the Website</h2>
+            <h2 className="text-2xl font-bold mb-4">Përdorimi i Faqes së Internetit</h2>
             <p className="mb-4">
-              You may only use our website for lawful purposes and in accordance with these terms and conditions. You agree not to use the website in any way that may damage, disable, overburden, or impair it.
+              Ju mund të përdorni faqen tonë vetëm për qëllime ligjore dhe në përputhje me këto kushte dhe kushte. Pranoni të mos përdorni faqen në një mënyrë që mund të dëmtojë, çaktivizojë, ngarkojë ose dëmtojë atë.
             </p>
           </div>
 
           <div className="bg-white shadow-md rounded-lg p-8">
-            <h2 className="text-2xl font-bold mb-4">Intellectual Property</h2>
+            <h2 className="text-2xl font-bold mb-4">Pronësia Intelektuale</h2>
             <p className="mb-4">
-              All content on the website, including text, graphics, logos, and images, is the property of our company and is protected by copyright and other intellectual property laws.
+              Të gjitha përmbajtjet në faqen e internetit, duke përfshirë tekstin, grafikët, logot dhe imazhet, janë pronë e kompanisë tonë dhe janë të mbrojtura nga ligjet për të drejtat e autorit dhe ligje të tjera për pronësinë intelektuale.
             </p>
           </div>
 
           <div className="bg-white shadow-md rounded-lg p-8">
-            <h2 className="text-2xl font-bold mb-4">Limitation of Liability</h2>
+            <h2 className="text-2xl font-bold mb-4">Përgjegjësitë e Shitësve të Automjeteve</h2>
             <p className="mb-4">
-              We shall not be liable for any direct, indirect, incidental, special, or consequential damages arising out of or related to your use of the website.
+              Shitësit e automjeteve duhet të kontrollojnë rregullisht email-et e tyre për njoftimet nga faqja jonë, ART. Nëse një shitës nuk kontrollon email-et dhe humbet mundësinë për të pranuar një rezervim, përgjegjësia është e tij ose e saj.
             </p>
           </div>
 
           <div className="bg-white shadow-md rounded-lg p-8">
-            <h2 className="text-2xl font-bold mb-4">Governing Law</h2>
+            <h2 className="text-2xl font-bold mb-4">Rezervimi i Automjeteve</h2>
             <p className="mb-4">
-              These terms and conditions shall be governed by and construed in accordance with the laws of [your jurisdiction].
+              Klientët do të paguajnë një tarifë fikse për rezervimin e një automjeti. Administratori do të dërgojë një email te shitësi me detajet e rezervimit, përfshirë çmimin, datën e marrjes dhe kthimin e automjetit, dhe informacionin e kontaktit të klientit. Shitësi mund të vendosë data që nuk janë të rezervueshme ose të bëjë automjetin jo të rezervueshëm për një periudhë të caktuar.
             </p>
           </div>
 
           <div className="bg-white shadow-md rounded-lg p-8">
-            <h2 className="text-2xl font-bold mb-4">Changes to the Terms and Conditions</h2>
+            <h2 className="text-2xl font-bold mb-4">Kufizimi i Përgjegjësisë</h2>
             <p className="mb-4">
-              We reserve the right to modify these terms and conditions at any time. Your continued use of the website after any such changes constitutes your acceptance of the new terms and conditions.
+              Ne nuk do të jemi përgjegjës për dëme të drejtpërdrejta, të tërthorta, të rastësishme, speciale ose pasuese që lindin nga ose që kanë lidhje me përdorimin tuaj të faqes së internetit. Kjo përfshin çdo humbje të mundshme të të ardhurave ose ndonjë dëmtim tjetër që mund të ndodhë për shkak të përdorimit të faqes ose shërbimeve tona.
             </p>
           </div>
 
           <div className="bg-white shadow-md rounded-lg p-8">
-            <h2 className="text-2xl font-bold mb-4">Contact Us</h2>
+            <h2 className="text-2xl font-bold mb-4">Ligji Rregullues</h2>
             <p className="mb-4">
-              If you have any questions or concerns about these terms and conditions, please contact us at [your email or contact information].
+              Këto kushte dhe kushte do të rregullohen dhe interpretohen në përputhje me ligjet e [juridiksioni juaj]. Çdo mosmarrëveshje që lind nga këto kushte do të zgjidhet në gjykatat e [juridiksioni juaj].
+            </p>
+          </div>
+
+          <div className="bg-white shadow-md rounded-lg p-8">
+            <h2 className="text-2xl font-bold mb-4">Ndryshimet në Kushtet dhe Kushtet</h2>
+            <p className="mb-4">
+              Ne rezervojmë të drejtën për të modifikuar këto kushte dhe kushte në çdo kohë. Përdorimi juaj i vazhdueshëm i faqes pas çdo ndryshimi të tillë përbën pranimin tuaj të kushteve dhe kushteve të reja. Ju do të njoftoheni për çdo ndryshim të rëndësishëm në këto kushte.
+            </p>
+          </div>
+
+          <div className="bg-white shadow-md rounded-lg p-8">
+            <h2 className="text-2xl font-bold mb-4">Kontakti</h2>
+            <p className="mb-4">
+              Nëse keni ndonjë pyetje ose shqetësim në lidhje me këto kushte dhe kushte, ju lutemi na kontaktoni në [emaili ose informacioni juaj i kontaktit]. Ne do të përpiqemi të përgjigjemi në të gjitha kërkesat dhe pyetjet tuaja në një mënyrë të shpejtë dhe efikase.
             </p>
           </div>
         </div>

@@ -550,3 +550,31 @@ export const bookings = async (req, res) => {
       return res.status(500).json({ msg: error.message, status: 500 });
     }
   };
+
+
+
+export const contactUs = async (req, res) => {
+    try{
+        const {name , email , number , message} = req.body;
+
+        (async function () {
+            const { data, error } = await resend.emails.send({
+              from: 'Acme <onboarding@resend.dev>',
+              to: [`stivixhaferri01@gmail.com`],
+              subject: `ART Contact US Message`,
+              html: `<strong>Name: ${name}   Email: ${email} <br/> Phone ${number} <br/> Message: ${message} </strong>`,
+            });
+          
+            if (error) {
+              return console.error({ error });
+            }
+          
+            console.log({ data });
+          })();
+
+          return res.json({msg: 'Success', status: 200})
+
+    }catch(error){
+        return res.json({msg: error , status: 500})
+    }
+}

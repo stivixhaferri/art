@@ -3,7 +3,7 @@ import cors from 'cors'
 import dotenv from 'dotenv'
 import connect from './config/db.js';
 import cookieParser from 'cookie-parser';
-import { register  ,random  ,disableCar  , enableCar, getUser ,book , getComments , logout ,postCar, postComment , login , getCars , getMyCars , reserveDate , getMyCar}  from './controllers/CarController.js';
+import { register  ,random , contactUs  ,disableCar  , enableCar, getUser ,book , getComments , logout ,postCar, postComment , login , getCars , getMyCars , reserveDate , getMyCar}  from './controllers/CarController.js';
 import multer from 'multer';
 import path from 'path';
 import rateLimit from 'express-rate-limit';
@@ -78,6 +78,7 @@ app.post('/api/book' , book);
 app.get('/api/disable' , disableCar);
 app.get('/api/random', random)
 app.get('/api/enable', enableCar);
+app.post('/api/contact', authLimiter , contactUs)
 
 const PORT = process.env.PORT || 8001;
 app.listen(PORT , () => {
