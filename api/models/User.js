@@ -15,6 +15,19 @@ const userSchema = new mongoose.Schema({
     type: String,
     required: [true, "Password is Required"],
   },
+  card_id: {
+    type:String,
+    required:false
+  },
+  paypal_email:{
+    type:String,
+    required:false
+  },
+  status:{
+    type:String,
+    required:false,
+    default: "false"
+  }
 },{timestamps: true});
 
 userSchema.pre("save", async function (next) {

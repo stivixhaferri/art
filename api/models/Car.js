@@ -1,51 +1,85 @@
 import mongoose from "mongoose";
 
-
 const carSchema  = new mongoose.Schema({
-    make:{
-        type:String,
-        required:true
+    title: {
+        type: String,
+        required: true
+    },
+    make: {
+        type: String,
+        required: true
     },
     model: {
-        type:String,
+        type: String,
         required: true
     },
-    year:{
-        type:String,
+    year: {
+        type: Number,
         required: true
     },
-    seats:{
-        type:Number,
+    city: {
+        type: String,
         required: true
     },
-    transmision:{
-        type:String,
-        required:true
+    seats: {
+        type: Number,
+        required: false
     },
-    fuel:{
-        type:String,
-        required:true
+    transmission: { // Corrected the typo
+        type: String,
+        required: true
     },
-    location:{
-        type:String,
-        required:true
+    fuel: {
+        type: String,
+        required: true
     },
-    cover:{
-        type:String,
-        required:true
+    location: {
+        type: String,
+        required: true
     },
-    images:{
+    cover: {
+        type: String,
+        required: true
+    },
+    images: {
+        type: [String],
+        required: true
+    },
+    userId: {
+        type: String,
+        required: true
+    },
+    description: {
+        type: String,
+        required: true
+    },
+    rate: {
+        type: Number,
+        required: true
+    },
+    other:{
         type:[String],
-        required:true
+        required:false
     },
-    userId:{
+    start_date:{
         type:String,
-        required:true
+        required:false
+    },
+    end_date:{
+        type:String,
+        required:false
+    },
+    views:{
+        type:Number,
+        required:false,
+        default: 1
+    },
+    disable:{
+        type:String,
+
+        default: 'false'
     }
-
-    
-})
-
+},{timestamps: true});
 
 const CarModel = mongoose.model("Cars", carSchema);
 
